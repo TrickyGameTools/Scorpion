@@ -1,0 +1,20 @@
+# Windows
+*.exe
+*.obj
+
+# Linux
+*.o
+
+# Visual Studio
+*.filters
+*.user
+
+# Code::Blocks
+*.depend
+*.layout
+
+# General
+Exe
+bin
+
+
