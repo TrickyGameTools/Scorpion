@@ -22,6 +22,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../../../Libs/Units/Source/SlyvQCol.cpp" />
+		<Unit filename="Scorpion.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
