@@ -22,7 +22,7 @@
 // 	Please note that some references to data like pictures or audio, do not automatically
 // 	fall under this licenses. Mostly this is noted in the respective files.
 // 
-// Version: 26.02.28
+// Version: 26.02.28 I
 // End License
 
 #define Always_Be_Verbose
@@ -45,7 +45,7 @@ inline void Out(String T,String V) {
 	if (!Verbose) {
 #endif // Always_Be_Verbose
 		QCol->LMagenta(T+"> ");
-		QCol->Grey(V);
+		QCol->Grey(Trim(V)+"\n");
 #ifndef Always_Be_Verbose
 	}
 #endif // Always_Be_Verbose
@@ -53,6 +53,12 @@ inline void Out(String T,String V) {
 inline void Out(String V) { Out("Pipe",V); }
 
 int main(int c, char**a) {
+	QCol->White("Scorpion\t\t");
+	QCol->LMagenta(__DATE__ "; " __TIME__ "\n\n");
+	QCol->Doing("Coded by","Jeroen P. Broks");
+	QCol->Doing("License","General Public License 3");
+	cout <<"\n\n";
+	String MyDir{ExtractDir(a[0])};
 	FILE* bt;
 	char buff[512];
 	for (int i=1;i<c;++i) {
@@ -61,7 +67,8 @@ int main(int c, char**a) {
 
 	Chain="Scorpion_GUI";
 	do {
-		if(!(bt = popen(Chain.c_str(), "r"))){
+		Out("Executing",Chain);
+		if(!(bt = popen((MyDir+"/"+Chain).c_str(), "r"))){
 			QCol->Error("Pipe failed");
 			QCol->LMagenta(Chain+"\n\n");
 			QCol->Reset();
@@ -69,7 +76,14 @@ int main(int c, char**a) {
 		}
 		Chain="";
 		while(fgets(buff, sizeof(buff), bt)!=NULL ) {
-			Out(buff);
+			int p{IndexOf(buff,':')};
+			String B{buff};
+			String Cmd{p>0?B.substr(0,p):"?"},Arg{p>0?B.substr(p+1):buff};
+			if (Cmd=="SCORPION CHAIN") {
+				Out("New Chain",Arg);
+			} else {
+				Out(buff);
+			}
 		}
 	} while(Chain!="");
 	pclose(bt);

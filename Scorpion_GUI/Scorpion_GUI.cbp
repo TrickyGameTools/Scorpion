@@ -26,7 +26,34 @@
 		<Linker>
 			<Add option="`sdl2-config --libs`" />
 		</Linker>
+		<Unit filename="../../../Libs/JCR6/Source/JCR6_Core.cpp" />
+		<Unit filename="../../../Libs/June19/src/june19_button.cpp" />
+		<Unit filename="../../../Libs/June19/src/june19_checkbox.cpp" />
+		<Unit filename="../../../Libs/June19/src/june19_core.cpp" />
+		<Unit filename="../../../Libs/June19/src/june19_label.cpp" />
+		<Unit filename="../../../Libs/June19/src/june19_listbox.cpp" />
+		<Unit filename="../../../Libs/June19/src/june19_picture.cpp" />
+		<Unit filename="../../../Libs/June19/src/june19_radio.cpp" />
+		<Unit filename="../../../Libs/June19/src/june19_scrollbar.cpp" />
+		<Unit filename="../../../Libs/June19/src/june19_tabber.cpp" />
+		<Unit filename="../../../Libs/June19/src/june19_textarea.cpp" />
+		<Unit filename="../../../Libs/June19/src/june19_textfield.cpp" />
+		<Unit filename="../../../Libs/TQSL/Source/TQSE.cpp" />
+		<Unit filename="../../../Libs/TQSL/Source/TQSG.cpp" />
+		<Unit filename="../../../Libs/TQSL/Source/TQSG_BlopPlasma.cpp" />
+		<Unit filename="../../../Libs/Units/Source/SlyvBank.cpp" />
+		<Unit filename="../../../Libs/Units/Source/SlyvDir.cpp" />
+		<Unit filename="../../../Libs/Units/Source/SlyvQCol.cpp" />
+		<Unit filename="../../../Libs/Units/Source/SlyvSTOI.cpp" />
+		<Unit filename="../../../Libs/Units/Source/SlyvStream.cpp" />
+		<Unit filename="../../../Libs/Units/Source/SlyvString.cpp" />
+		<Unit filename="UI_Main.cpp" />
+		<Unit filename="UI_Main.hpp" />
 		<Unit filename="main.cpp" />
-		<Extensions />
+		<Extensions>
+			<lib_finder>
+				<lib name="SDL2_image" />
+			</lib_finder>
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
