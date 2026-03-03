@@ -26,6 +26,62 @@
 		<Linker>
 			<Add option="`sdl2-config --libs`" />
 		</Linker>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/adler32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/compress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/crc32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/crc32.h" />
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/deflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/deflate.h" />
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/gzclose.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/gzguts.h" />
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/gzlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/gzread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/gzwrite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/infback.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/inffast.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/inffast.h" />
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/inffixed.h" />
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/inflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/inflate.h" />
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/inftrees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/inftrees.h" />
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/trees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/trees.h" />
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/uncompr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/zconf.h" />
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/zlib.h" />
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/zutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Libs/JCR6/3rdParty/zlib/src/zutil.h" />
 		<Unit filename="../../../Libs/JCR6/Source/JCR6_Core.cpp" />
 		<Unit filename="../../../Libs/June19/src/june19_button.cpp" />
 		<Unit filename="../../../Libs/June19/src/june19_checkbox.cpp" />
@@ -43,12 +99,19 @@
 		<Unit filename="../../../Libs/TQSL/Source/TQSG_BlopPlasma.cpp" />
 		<Unit filename="../../../Libs/Units/Source/SlyvBank.cpp" />
 		<Unit filename="../../../Libs/Units/Source/SlyvDir.cpp" />
+		<Unit filename="../../../Libs/Units/Source/SlyvDirry.cpp" />
 		<Unit filename="../../../Libs/Units/Source/SlyvQCol.cpp" />
 		<Unit filename="../../../Libs/Units/Source/SlyvSTOI.cpp" />
 		<Unit filename="../../../Libs/Units/Source/SlyvStream.cpp" />
 		<Unit filename="../../../Libs/Units/Source/SlyvString.cpp" />
+		<Unit filename="Assets.cpp" />
+		<Unit filename="Assets.hpp" />
+		<Unit filename="Chosen.cpp" />
+		<Unit filename="Chosen.hpp" />
 		<Unit filename="UI_Main.cpp" />
 		<Unit filename="UI_Main.hpp" />
+		<Unit filename="UI_Overview.cpp" />
+		<Unit filename="UI_Overview.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder>
