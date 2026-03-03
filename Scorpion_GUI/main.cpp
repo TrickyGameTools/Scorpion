@@ -24,6 +24,7 @@
 //
 // Version: 26.02.28
 // End License
+
 #include <exception>
 #include <string>
 #include <iostream>
@@ -32,12 +33,20 @@
 #include <SlyvQCol.hpp>
 
 
+
 #include "UI_Main.hpp"
+
+#include "Assets.hpp"
+
 
 int main( int argc, char * argv[] )
 {
+	Slyvina::Scorpion::EXE=argv[0];
+
 	QCol->Doing("Scorpion","GUI");
 	QCol->Doing("Coded by","Jeroen P. Broks");
+	std::cout << "\n\n";
+	QCol->Doing("Assets",Slyvina::Scorpion::AssetFile());
 
 	Slyvina::Scorpion::Init();
 	Slyvina::Scorpion::Run();
